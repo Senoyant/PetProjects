@@ -1,0 +1,342 @@
+body {
+    overflow-x:hidden;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(49, 46, 46, 0.979);
+}
+@font-face {
+    font-family: TF2; /* Имя шрифта */
+    src: url(fonts/tf2build.ttf); /* Путь к файлу со шрифтом */
+}
+   h1{
+       margin-top: 50px;
+       margin-bottom: 70px;
+       font-family: TF2;
+       color:rgba(255, 187, 1, 0.7);
+       text-align: center;
+       text-decoration: underline;
+   }
+   .desc {
+       
+       color: white;
+       text-align: center;
+      
+       margin-left: 15%;
+       margin-right:15%;
+       line-height: 3em;
+
+   }
+   .quote {
+       float: left;
+       width:70%;
+   }
+   .quote2 {
+     
+    float: right;
+    width:70%;
+   }
+   figure {
+       left:0;
+   }
+   blockquote {
+    margin: 0;
+}
+  
+
+blockquote p {
+    color: white;
+    font-family: 'Hind', sans-serif;
+    padding: 15px;
+    background: rgba(255, 187, 1, 0.7);
+    border-radius: 5px;
+}
+figcaption {
+    color:rgba(255, 187, 1, 0.7) ;
+}
+
+.mark {
+    float: left;
+    color: white;
+    background-color: rgb(1, 199, 1);
+    text-align: center;
+    height: 1.9em;
+    width: 1.9em;
+    font-size: 30px;
+    line-height: 1.9em;
+    border-radius: 5px;
+    margin-top:1em;
+   margin-left:15% ;
+   margin-right:10%;
+   margin-bottom:3em;
+    
+}
+.mark2 {
+    float:left;
+    color: white;
+    background-color: rgb(1, 199, 1);
+    text-align: center;
+    height: 1.9em;
+    width: 1.9em;
+    font-size: 30px;
+    line-height: 1.9em;
+    border-radius: 5px;
+    margin-left:15%;
+    margin-top:1em;
+    margin-bottom:3em;
+    margin-right:10%;
+}
+
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+#block-for-slider {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-top: 2px black;
+}
+#play {
+position: relative;
+
+    top:100px;
+}
+ .play {
+     position: relative;
+     top: 100px;
+    display: inline-flex;
+}
+
+
+h2 {
+    font-family:'Hind', sans-serif ;
+    color:gold;
+    text-align: center;
+}
+.revealator-slideright {
+
+    background: no-repeat right  url(pics/majima.png) ;
+    width:40%; 
+    padding-right: 18%; 
+}
+.revealator-slideleft {
+    background: no-repeat left url(pics/kiryu2.png);
+    padding-left: 18%;
+    width:40%;
+}
+.char-g {
+    color: white;
+    background-color: gray;
+    font-family: 'Hind', sans-serif;
+    height:200px;
+    padding: 20px;
+    padding-left: 50px;
+}
+.char-k {
+    color: white;
+    background-color: gray;
+    font-family: 'Hind', sans-serif;
+    height:200px;
+    padding: 20px;
+    padding-right: 50px;
+}
+span {
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    color: gold;
+}
+.end {
+    position: relative;
+    top:300px;
+    height:1080px;
+    width:100%;
+    background: center no-repeat url(pics/end.jpg);
+}
+form {
+    position: relative;
+    margin: 0 auto;
+    margin-right: 100px;
+    top:10%;
+width: 30%;
+}
+fieldset {
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.877);
+    height:300px;
+}
+legend {
+    color: gold;
+    border-radius: 5px;
+    background-color: black;
+    border: 3px solid grey;
+
+    font-size: 40px;
+
+}
+input {
+    font-family: 'Hind', sans-serif ;
+    font-size: 30px;
+    border: 0px;
+    border-radius: 3px;
+}
+label {
+    color:white;
+font-size: 30px;
+}
+.submit {
+    position: absolute;
+    right:10%;
+    bottom:20px;
+    font-size: 30px;
+    font-family: 'Hind', sans-serif;
+    border-radius: 10px;
+    border:0;
+    padding: 10px;
+    padding-bottom: 7px;
+}
+.submit:hover {
+    cursor: pointer;
+    background-color: gold;
+}
+.offer {
+    font-family: 'Hind', sans-serif;
+    color:white;
+    padding:10px;
+    padding-right: 0px;
+    letter-spacing: 2px;
+    background-color: rgba(134 ,134 ,134, 0.9);
+    line-height: 1.9em;
+    position: relative;
+    left:30px;
+    top: 40%;
+    width:30%;
+    border: 2px solid gold ;
+}
+#viewport {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+#slidewrapper ul, #slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+#slidewrapper li {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    width: 100%;
+    height:400px;
+}
+#prev-btn, #next-btn {
+    position: absolute;
+    width: 5%;
+    height: 400px;
+    background-color: #fff;
+    
+    
+}
+
+#prev-btn:hover, #next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    background: center no-repeat url(pics/right-button3.png);
+    transform: rotate(180deg);
+
+}
+#prev-btn:hover {
+    background: center no-repeat url(pics/right-button3-hover.png);
+    transform: rotate(180deg);
+}
+#next-btn {
+    background:center no-repeat url(pics/right-button3.png);
+    right:0;
+}
+#next-btn:hover {
+    background:center no-repeat url(pics/right-button3-hover.png);
+    right:0;
+}
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 40px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 5%;
+    margin: 3px;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+    background-color:rgba(255, 187, 1, 0.7);
+}
+header {
+    height:4rem;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1) 30%)  ;
+    
+    
+}
+.order{
+    width: 8em;
+    height: 4rem;
+    position: absolute;
+    right: 50px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1) ) ;
+    text-align: center;
+    font-size: 2rem;
+    
+    line-height: 1.7;
+    margin-top:0px;
+ margin-right: 150px;
+ text-decoration: none;
+}
+.order:hover
+{
+cursor: pointer;
+    background:rgba(255, 187, 1, 0.7);
+}
